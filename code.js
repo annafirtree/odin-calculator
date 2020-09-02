@@ -193,10 +193,6 @@ function evaluateSequence(){
 
 
 
-
-
-
-
 // Helpful sub-functions
 
 
