@@ -1,0 +1,80 @@
+
+body{
+    background-color: lightskyblue;
+    padding: 20px;
+}
+
+header{
+    text-align: center;
+    font-variant: small-caps;
+    margin-bottom: 50px;
+}
+
+main{
+    border: 10px solid black;
+    border-radius: 10px;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    "display display"
+    "numbers operators";
+    grid-template-columns: 2fr 1fr;
+    font: 20px Garamond, serif;
+    padding: 5px;
+}
+button{
+    font: 40px Garamond, serif;
+    margin: 2px;
+    background-color: steelblue;
+    color: white;
+    border-radius: 10px;
+}
+#display{
+    grid-area: display;
+    text-align: right;
+    padding: 20px;
+    font: 30px Times, serif;
+    background: lightgray;
+    margin: 2px;
+    border: 1px solid steelblue;
+}
+
+#number-container{
+    grid-area: numbers;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#operators-container{
+    grid-area: operators;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "ops misc";
+}
+#misc-container{
+    grid-area: misc;
+}
+#ops-container{
+    grid-area: ops;
+}
+.operator{
+    width: 95%;
+    height: 60px;
+    background-color: slategray;
+}
+#equals{
+    background-color: lightgray;
+    font-weight: bold;
+    color: black;;
+}
+
+footer{
+    margin: 100px auto 0px auto;
+    text-align: center;
+}
+
+@media (min-width: 650px){
+    main{
+        width: 600px;
+    }
+}
